@@ -1,6 +1,8 @@
 #ifndef _SORT_H_
 #define _SORT_H_
 #include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -33,5 +35,6 @@ void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 void quick_sort_hoare_recursive(int *array, size_t size, int left, int right);
 void quick_sort_hoare(int *array, size_t size);
+listint_t *swap_node(listint_t *node, listint_t **list);
 
 #endif
